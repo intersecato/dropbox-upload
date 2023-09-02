@@ -1,6 +1,9 @@
 name: 'Upload files to Dropbox'
 description: 'This action will handle the deployment process of your project to Dropbox.'
 author: 'intersecato'
+branding:
+  icon: 'arrow-up'
+  color: 'black'
 runs:
   using: 'node16'
   main: 'dist/index.js'
