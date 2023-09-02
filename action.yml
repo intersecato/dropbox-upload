@@ -1,0 +1,25 @@
+name: 'Deploy to Dropbox'
+description: 'This action will handle the deployment process of your project to Dropbox.'
+author: 'intersecato'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
+inputs:
+
+  DROPBOX_ACCESS_TOKEN:
+    description: 'Token for access to Dropbox'
+    required: true
+
+  GLOB: 
+    description: 'File that you want to save to Dropbox'
+    required: true
+  
+  DROPBOX_DESTINATION_PATH_PREFIX:
+    description: 'Destination path prefix to save to in Dropbox.'
+    required: false
+    default: "/"
+
+  DEBUG:
+    description: "Enable debugging."
+    required: false
+

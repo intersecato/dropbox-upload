@@ -1,0 +1,32 @@
+{
+  "name": "deploy-to-dropbox",
+  "version": "1.0.0",
+  "description": "A GitHub Action to deploy to Dropbox",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc && ncc build dist/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aTable/deploy-to-dropbox.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aTable/deploy-to-dropbox/issues"
+  },
+  "homepage": "https://github.com/aTable/deploy-to-dropbox#readme",
+  "dependencies": {
+    "@actions/core": "^1.9.1",
+    "@actions/github": "^2.1.1",
+    "@types/node": "^13.9.3",
+    "dropbox": "^4.0.30",
+    "glob": "^7.1.6"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.22.0",
+    "node-fetch": "^2.6.7",
+    "typescript": "^3.8.3"
+  }
+}
