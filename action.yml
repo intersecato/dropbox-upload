@@ -1,4 +1,4 @@
-name: 'Deploy to Dropbox'
+name: 'Upload files to Dropbox'
 description: 'This action will handle the deployment process of your project to Dropbox.'
 author: 'intersecato'
 runs:
